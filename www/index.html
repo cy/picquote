@@ -19,6 +19,7 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
+    <script src="js/ocrad.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
   </head>
@@ -28,7 +29,10 @@
     </ion-header-bar>
     <ion-content padding="true">
       <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
-      <img ng-src="{{lastPhoto}}" style="max-width: 100%">
+      <!--<img ng-src="{{lastPhoto}}" style="max-width: 100%" id="test-image">-->
+      <canvas id="myCanvas" width="320" height="320"></canvas>
+      {{ gotText }}
+
     </ion-content>
   </body>
 </html>

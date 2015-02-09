@@ -21,11 +21,13 @@ angular.module('starter', ['ionic', 'starter.services'])
 })
 
 .controller('MainCtrl', function($scope, Camera) {
+  $scope.gotText = "text will appear here";
 
   $scope.getPhoto = function() {
     Camera.getPicture().then(function(imageURI) {
       console.log(imageURI);
-      $scope.lastPhoto = imageURI;
+      //$scope.lastPhoto = imageURI;
+      $scope.loadCanvas(imageURI);
     }, function(err) {
       console.err(err);
     }, {
@@ -34,6 +36,23 @@ angular.module('starter', ['ionic', 'starter.services'])
       targetHeight: 320,
       saveToPhotoAlbum: false
     });
+  };
+
+  $scope.loadCanvas = function(dataURL) {
+    var canvas = document.getElementById('myCanvas');
+    var context = canvas.getContext('2d');
+
+    // load image from data url
+    var imageObj = new Image();
+    imageObj.onload = function() {
+      context.drawImage(this, 0, 0, 320, 320);
+      var string = OCRAD(context);
+      console.log("OCRAD got this text:" + string);
+      $scope.$apply(function(){
+        $scope.gotText = string;
+      });
+    };
+    imageObj.src = dataURL;
   };
 
 })

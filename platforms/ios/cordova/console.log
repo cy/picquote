@@ -217,3 +217,15 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-05-14 21:24:29.739 CameraTest[68544:70b] [CDVTimer][TotalPluginStartup] 1.332998ms
 2014-05-14 21:24:29.869 CameraTest[68544:70b] Resetting plugins due to page load.
 2014-05-14 21:24:30.095 CameraTest[68544:70b] Finished load of: file:///Users/driftyadmin/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/01E1B564-2D26-41C7-B495-76141877B4E8/CameraTest.app/www/index.html#/tab/dash
+2015-02-07 19:59:08.620 CameraTest[880:114115] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/CYu/Library/Developer/CoreSimulator/Devices/A43A8C73-6B7F-4373-B45D-44E9EA05BED4/data/Containers/Data/Application/97463590-F9D5-40B4-AFA5-CADE1283EE32/Library/Cookies/Cookies.binarycookies
+2015-02-07 19:59:08.712 CameraTest[880:114115] Multi-tasking -> Device: YES, App: YES
+2015-02-07 19:59:08.728 CameraTest[880:114115] Unlimited access to network resources
+2015-02-07 19:59:09.690 CameraTest[880:114115] Resetting plugins due to page load.
+2015-02-07 19:59:09.854 CameraTest[880:114115] Finished load of: file:///Users/CYu/Library/Developer/CoreSimulator/Devices/A43A8C73-6B7F-4373-B45D-44E9EA05BED4/data/Containers/Bundle/Application/62231820-3CD1-4165-B236-4CCA055FEEC9/CameraTest.app/www/index.html
+2015-02-07 19:59:16.077 CameraTest[880:114115] Camera.getPicture: source type 1 not available.
+2015-02-07 19:59:16.617 CameraTest[880:114115] ACTIVATING
+2015-02-07 19:59:16.663 CameraTest[880:114115] Camera.getPicture: source type 1 not available.
+2015-02-07 19:59:18.589 CameraTest[880:114115] ACTIVATING
+2015-02-07 19:59:18.859 CameraTest[880:114115] Camera.getPicture: source type 1 not available.
+2015-02-07 19:59:19.393 CameraTest[880:114115] ACTIVATING
+2015-02-07 19:59:19.625 CameraTest[880:114115] Camera.getPicture: source type 1 not available.
