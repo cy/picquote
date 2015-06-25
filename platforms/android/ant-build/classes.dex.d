@@ -1,0 +1,20 @@
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes.dex : \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/BuildConfig.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/CordovaApp.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/R$attr.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/R$drawable.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/R$string.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/R$xml.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/christine_yu/picquote/R.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/BuildConfig.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/CordovaApp.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/R$attr.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/R$drawable.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/R$string.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/R$xml.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/com/ionicframework/starter/R.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/CYu/repos/sandbox/picquote/platforms/android/ant-build/dexedLibs/classes-9ffdd8319b6a52bfbd9263337f88b5e0.jar \

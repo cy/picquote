@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/ng-img-crop.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/ng-img-crop.js"></script>
+    <script src="js/ocrad.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <style>
+    .cropArea {
+      background: #E4E4E4;
+      overflow: hidden;
+      width:500px;
+      height:350px;
+    }
+  </style>
+
+  <body ng-app="starter" ng-controller="MainCtrl" class="platform-android platform-cordova platform-webview">
+    <ion-header-bar>
+      <h1 class="title">Photos</h1>
+    </ion-header-bar>
+    <ion-content padding="true">
+      <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
+      <!--<img ng-src="{{lastPhoto}}" style="max-width: 100%" id="test-image">-->
+      <div>Select an image file: <input type="file" id="fileInput" /></div>
+
+      <div class="cropArea">
+        <img-crop image="myImage" result-image="myCroppedImage" area-type="square" on-change="cropChange($dataURI)"></img-crop>
+      </div>
+      <div>Cropped Image:</div>
+      <!--<div><img ng-src="{{myCroppedImage}}" /></div>-->
+
+      <canvas id="myCanvas" width="320" height="320"></canvas>
+      {{ gotText }}
+
+    </ion-content>
+  </body>
+</html>
