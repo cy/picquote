@@ -21,6 +21,23 @@ angular.module('starter', ['ionic', 'starter.services', 'ngImgCrop'])
 })
 
 .controller('MainCtrl', function($scope, Camera) {
+  new Darkroom('#darkroom', {
+    // Canvas initialization size
+    minWidth: 100,
+    minHeight: 100,
+    maxWidth: 500,
+    maxHeight: 500,
+
+    // Plugins options
+    plugins: {
+      crop: {
+        minHeight: 50,
+        minWidth: 50,
+        ratio: 1
+      }
+    },
+  });
+
   $scope.gotText = "text will appear here";
 
   $scope.getPhoto = function() {

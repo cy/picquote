@@ -1,0 +1,39 @@
+{
+  "name": "darkroom",
+  "description": "Extensible image editing tool via HTML canvas",
+  "version": "1.0.0",
+  "homepage": "https://mattketmo.github.io/darkroomjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattketmo/darkroomjs.git"
+  },
+  "author": {
+    "name": "Matthieu Moquet",
+    "email": "matthieu@moquet.net",
+    "url": "http://moquet.net/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-docco": "~0.3.0",
+    "grunt-webfont": "~0.2.1",
+    "load-grunt-tasks": "~0.1.0"
+  },
+  "readme": "# DarkroomJS\n\nDarkroomJS is a JavaScript library which provides basic image editing tools in\nyour browser, such as **rotation** or **cropping**. It is based on the awesome\n[FabricJS](http://fabricjs.com/) library to handle images in HTML5 canvas.\n\n## Demo\n\nTry the online demo at [http://mattketmo.github.io/darkroomjs](http://mattketmo.github.io/darkroomjs/)\n\nThe library is currently *work in progress*.\nI know there is some bug especially when resizing the crop zone.\nFeel free to fork the project or report issues on GitHub.\nAll ideas are also welcome.\n\n## Building\n\n- Install [Node](http://nodejs.org/)\n- Install [Grunt](http://gruntjs.com/)\n- The webfont is auto generated from SVG icons.\n  This uses the [grunt-webfont](https://github.com/sapegin/grunt-webfont) task which\n  requires `fontforge` and `ttfautohint`. See [the readme](https://github.com/sapegin/grunt-webfont#installation)\n  for more details.\n- Run `npm install`\n- Run `grunt build`\n\nEvery assets will be generated into the `build/` directory.\n\n## Usage\n\nSimply instanciate a new Darkroom object with a reference to the image element:\n\n```html\n<img src=\"some-image.jpg\" id=\"target\">\n<script>\n  new Darkroom('#target');\n</script>\n```\n\nYou can also pass some options:\n\n```javascript\nnew Darkroom('#target', {\n  // Canvas initialization size\n  minWidth: 100,\n  minHeight: 100,\n  maxWidth: 500,\n  maxHeight: 500,\n\n  // Plugins options\n  plugins: {\n    crop: {\n      minHeight: 50,\n      minWidth: 50,\n      ratio: 1\n    },\n    save: false // disable plugin\n  },\n});\n```\n\n## Why?\n\nIt's easy to get a javascript script to crop an image in a web page.\nBut if your want more features like rotation or brightness adjustment, then you\nwill have to do it yourself. No more jQuery plugins here.\nIt only uses the power of HTML5 canvas to make what ever you want with your image.\n\n## The concept\n\nThe library is designed to be easily extendable. The core script only transforms\nthe target image to a canvas with a FabricJS instance, and creates an empty toolbar.\nAll the features are then implemented in separate plugins.\n\nEach plugin is responsible for creating its own functionality.\nButtons can easily be added to the toolbar and binded with those features.\n\n## License\n\nDarkroomJS is released under the MIT License. See the [bundled LICENSE file](LICENSE)\nfor details.\n\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mattketmo/darkroomjs/issues"
+  },
+  "_id": "darkroom@1.0.0",
+  "_shasum": "2d20b9f0a2c6153664e79263729cd578fc29e54e",
+  "_resolved": "git://github.com/MattKetmo/darkroomjs#e0b057ac8e0b79f07e0b3b7b5978eb80f41b6e41",
+  "_from": "git://github.com/MattKetmo/darkroomjs",
+  "_fromGithub": true
+}

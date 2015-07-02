@@ -8,6 +8,7 @@
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/ng-img-crop.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="lib/darkroom/build/css/darkroom.min.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -15,6 +16,8 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/darkroom/vendor/fabric.js"></script>
+    <script src="lib/darkroom/build/js/darkroom.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -43,13 +46,14 @@
       <!--<img ng-src="{{lastPhoto}}" style="max-width: 100%" id="test-image">-->
       <div>Select an image file: <input type="file" id="fileInput" /></div>
 
-      <div class="cropArea">
-        <img-crop image="myImage" result-image="myCroppedImage" area-type="square" on-change="cropChange($dataURI)"></img-crop>
-      </div>
-      <div>Cropped Image:</div>
-      <!--<div><img ng-src="{{myCroppedImage}}" /></div>-->
+      <img src="img/receipt.jpg" id="darkroom">
 
-      <canvas id="myCanvas" width="320" height="320"></canvas>
+      <!--<div class="cropArea">-->
+        <!--<img-crop image="myImage" result-image="myCroppedImage" area-type="square" on-change="cropChange($dataURI)"></img-crop>-->
+      <!--</div>-->
+      <!--<div>Cropped Image:</div>-->
+
+      <!--<canvas id="myCanvas" width="320" height="320"></canvas>-->
       {{ gotText }}
 
     </ion-content>
